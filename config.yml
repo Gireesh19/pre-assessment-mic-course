@@ -1,0 +1,16 @@
+title: Pre-Assessment MIC
+description: Repository for assessment and interview
+template:
+  repo: pre-assessment-mic-template
+  name: pre-assessment-mic
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
